@@ -29,9 +29,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\packages\BouncyCastle.1.7.0\lib\Net40-Client\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Mictlanix.CFDLib">
+      <HintPath>..\packages\Mictlanix.CFDLib.0.1.0\lib\net45\Mictlanix.CFDLib.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestProgram.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -42,13 +47,10 @@
     <None Include="CSD01_AAA010101AAA.key">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CFDLib\Mictlanix.CFDLib.csproj">
-      <Project>{63EBACD8-7BB0-480F-81BF-5E0690B27112}</Project>
-      <Name>Mictlanix.CFDLib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Mictlanix.FelClient\Mictlanix.FelClient.csproj">
+    <ProjectReference Include="..\src\Mictlanix.FelClient\Mictlanix.FelClient.csproj">
       <Project>{52626DB9-B41C-42F3-870D-F2331DAC46C9}</Project>
       <Name>Mictlanix.FelClient</Name>
     </ProjectReference>

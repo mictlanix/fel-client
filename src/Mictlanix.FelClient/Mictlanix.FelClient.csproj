@@ -32,6 +32,12 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml" />
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\..\packages\BouncyCastle.1.7.0\lib\Net40-Client\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Mictlanix.CFDLib">
+      <HintPath>..\..\packages\Mictlanix.CFDLib.0.1.0\lib\net45\Mictlanix.CFDLib.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -41,9 +47,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\CFDLib\Mictlanix.CFDLib.csproj">
-      <Project>{63EBACD8-7BB0-480F-81BF-5E0690B27112}</Project>
-      <Name>Mictlanix.CFDLib</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

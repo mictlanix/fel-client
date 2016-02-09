@@ -4,7 +4,7 @@
 // Author:
 //       Eddy Zavaleta <eddy@mictlanix.com>
 //
-// Copyright (c) 2015 Eddy Zavaleta, Mictlanix, and contributors.
+// Copyright (c) 2015-2016 Eddy Zavaleta, Mictlanix, and contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -39,7 +39,7 @@ namespace Mictlanix.Servisim.Client.Tests {
 		const string USERNAME = "DEMO080311L8A";
 		const string PASSWORD = "3syhW9%&i&";
 
-		static DateTime TEST_DATE = new DateTime (2015, 03, 05, 8, 9, 12, DateTimeKind.Unspecified);
+		static DateTime TEST_DATE = new DateTime (2016, 02, 08, 8, 9, 11, DateTimeKind.Unspecified);
 
 		public TestProgram ()
 		{
@@ -47,9 +47,9 @@ namespace Mictlanix.Servisim.Client.Tests {
 
 		static void Main (string[] args)
 		{
-			// StampTest (USERNAME, PASSWORD);
+			StampTest (USERNAME, PASSWORD);
 			// CancelTest (USERNAME, PASSWORD);
-			GetStampTest (USERNAME, PASSWORD);
+			// GetStampTest (USERNAME, PASSWORD);
 		}
 
 		static void StampTest (string username, string password)
@@ -60,7 +60,7 @@ namespace Mictlanix.Servisim.Client.Tests {
 			AddItems (cfd, "Producto", 3);
 			cfd.Sign (File.ReadAllBytes (CSD_PRIVATE_KEY_FILE), Encoding.UTF8.GetBytes (CSD_PRIVATE_KEY_PWD));
 
-			var tfd = cli.Stamp ("WS03", cfd);
+			var tfd = cli.Stamp ("WS01", cfd);
 			Console.WriteLine (tfd.ToXmlString ());
 
 			cfd.Complemento = new List<object>();

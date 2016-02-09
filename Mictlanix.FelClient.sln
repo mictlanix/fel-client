@@ -1,11 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mictlanix.FelClient", "Mictlanix.FelClient\Mictlanix.FelClient.csproj", "{52626DB9-B41C-42F3-870D-F2331DAC46C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mictlanix.FelClient", "src\Mictlanix.FelClient\Mictlanix.FelClient.csproj", "{52626DB9-B41C-42F3-870D-F2331DAC46C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mictlanix.FelClient.Tests", "Mictlanix.FelClient.Tests\Mictlanix.FelClient.Tests.csproj", "{7A23CE56-C09C-4C4E-8EBB-550491F10BF3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mictlanix.CFDLib", "..\CFDLib\Mictlanix.CFDLib.csproj", "{63EBACD8-7BB0-480F-81BF-5E0690B27112}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Test\Tests.csproj", "{7A23CE56-C09C-4C4E-8EBB-550491F10BF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{52626DB9-B41C-42F3-870D-F2331DAC46C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52626DB9-B41C-42F3-870D-F2331DAC46C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52626DB9-B41C-42F3-870D-F2331DAC46C9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{63EBACD8-7BB0-480F-81BF-5E0690B27112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{63EBACD8-7BB0-480F-81BF-5E0690B27112}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{63EBACD8-7BB0-480F-81BF-5E0690B27112}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{63EBACD8-7BB0-480F-81BF-5E0690B27112}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7A23CE56-C09C-4C4E-8EBB-550491F10BF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7A23CE56-C09C-4C4E-8EBB-550491F10BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A23CE56-C09C-4C4E-8EBB-550491F10BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
