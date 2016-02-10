@@ -1,2 +1,2 @@
-# fel-client
-C# client library for FEL web services.
+# Mictlanix FEL Client
+.NET client library for FEL web services.
